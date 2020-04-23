@@ -1,0 +1,21 @@
+{
+    "name": "vlinked/mail-service",
+    "description": "微联达科技对邮件发送服务进行composer的封装",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VlinkedMail\\": "src/mail_service"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yuki",
+            "email": "756729874@qq.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+        "php": ">=5.6.0"
+    }
+}

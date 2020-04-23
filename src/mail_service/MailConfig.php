@@ -23,12 +23,12 @@ class MailConfig
      * 发件人账号
      * @var string
      */
-    private $useraname;
+    private $username;
     /**
      * 发件人密码
      * @var string
      */
-    private $pasword;
+    private $password;
     /**
      * 邮件发送端口
      * @var int
@@ -43,15 +43,16 @@ class MailConfig
     /**
      * MailConfig constructor.
      * @param $host
-     * @param $useraname
-     * @param $pasword
+     * @param $username
+     * @param $password
      * @param int $port
+     * @param $secure
      */
-    public function __construct($host, $useraname, $pasword, $port, $secure)
+    public function __construct($host, $username, $password, $port, $secure)
     {
         $this->host = $host;
-        $this->useraname = $useraname;
-        $this->pasword = $pasword;
+        $this->username = $username;
+        $this->password = $password;
         $this->port = $port;
         $this->secure = $secure;
     }
@@ -75,33 +76,33 @@ class MailConfig
     /**
      * @return string
      */
-    public function getUseraname()
+    public function getUsername()
     {
-        return $this->useraname;
+        return $this->username;
     }
 
     /**
-     * @param string $useraname
+     * @param string $username
      */
-    public function setUseraname($useraname)
+    public function setUsername($username)
     {
-        $this->useraname = $useraname;
+        $this->username = $username;
     }
 
     /**
      * @return string
      */
-    public function getPasword()
+    public function getPassword()
     {
-        return $this->pasword;
+        return $this->password;
     }
 
     /**
-     * @param string $pasword
+     * @param string $password
      */
-    public function setPasword($pasword)
+    public function setPassword($password)
     {
-        $this->pasword = $pasword;
+        $this->password = $password;
     }
 
     /**

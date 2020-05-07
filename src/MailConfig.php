@@ -6,7 +6,7 @@
  * Time: 15:40
  */
 
-namespace VlinkedMail\mail_service;
+namespace VlinkedMail;
 
 /**
  * Class MailConfig

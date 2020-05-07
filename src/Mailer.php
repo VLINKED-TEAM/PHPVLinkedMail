@@ -1,6 +1,6 @@
 <?php
 
-namespace VlinkedMail\mail_service;
+namespace VlinkedMail;
 
 use PHPMailer;
 

@@ -6,7 +6,7 @@
  * Time: 15:45
  */
 
-namespace VlinkedMail\mail_service;
+namespace VlinkedMail;
 
 
 use http\Exception\RuntimeException;
